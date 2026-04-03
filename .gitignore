@@ -1,0 +1,33 @@
+# ==============================
+# Ignorar archivos de Docker
+# ==============================
+
+# Archivos de configuración temporal o de entorno
+.env
+.env.local
+.env.*.local
+
+# Docker Compose overrides y backups
+docker-compose.override.yml
+docker-compose.override.*.yml
+docker-compose.backup.yml
+
+# Archivos de build de Docker
+Dockerfile.build
+*.tar
+*.img
+
+# Ignorar contenedores, imágenes y volúmenes locales
+docker-compose.override.yml
+**/docker-compose.override.yml
+**/docker-compose.override.*.yml
+
+# Directorios de datos de contenedores/volúmenes
+data/
+volumes/
+tmp/
+cache/
+
+# Ignorar logs
+*.log
+logs/
